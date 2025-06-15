@@ -1,0 +1,4 @@
+*.exe
+*.egg-info/
+MP3s/
+*.pyc
