@@ -10,6 +10,9 @@
 *.md  text diff=markdown eol=lf
 *.rst text diff=markdown eol=lf
 
+# TOML
+*.toml text eol=lf
+
 # Binary
 *.pyc binary export-ignore
 *.pyo binary export-ignore
