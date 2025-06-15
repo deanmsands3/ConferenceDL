@@ -13,6 +13,10 @@
 # TOML
 *.toml text eol=lf
 
+# JavaScript and JSON
+*.js   text eol=lf
+*.json text eol=lf
+
 # Binary
 *.pyc binary export-ignore
 *.pyo binary export-ignore
