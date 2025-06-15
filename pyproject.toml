@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name= "ConferenceDL"
+dependencies = [
+    "beautifulsoup4>4.12.0",
+    "bs4>=0.0.2",
+    "requests>=2.30.0",
+    "requests-cache>=1.2.0",
+    "urllib3>=2.2.0"
+]
+requires-python = ">= 3.10"
+authors = [
+    {name="Dean M. Sands, III", email="deanmsands3@gmail.com"}
+]
+description = "Downloads General Conference Talks from the Church of Jesus Christ of Latter-day Saints"
+license = "MIT"
+keywords =["LDS", "Christian", "Jesus Christ", "The Church of Jesus Christ of Latter-day Saints", "General Conference"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Intended Audience :: Religion",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Internet",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: Religion"
+]
+dynamic=["version"]
+
+[project.scripts]
+conference_dl = "ConferenceDl.cli:cli"
+[project.entry-points."pipx.run"]
+conference_dl = "ConferenceDL.cli:cli"
+
+[tool.black]
+line-length = 120
