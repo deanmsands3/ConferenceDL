@@ -1,0 +1,27 @@
+# Set default behavior for line endings
+* text=auto
+
+# Treat Python files as text, diff as Python, ensure LF
+*.py  text diff=python   eol=lf
+*.py3 text diff=python   eol=lf
+*.pyx text diff=python   eol=lf
+
+# Markdown
+*.md  text diff=markdown eol=lf
+*.rst text diff=markdown eol=lf
+
+# Binary
+*.pyc binary export-ignore
+*.pyo binary export-ignore
+*.pyd binary export-ignore
+*.dll binary export-ignore
+
+# Declare common binary files
+*.png binary
+*.jpg binary
+*.gif binary
+
+# Export Ignorables
+.gitignore     export-ignore
+.gitattributes export-ignore
+.gitkeep       export-ignore
