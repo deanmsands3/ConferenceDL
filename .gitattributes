@@ -22,6 +22,6 @@
 *.gif binary
 
 # Export Ignorables
-.gitignore     export-ignore
-.gitattributes export-ignore
-.gitkeep       export-ignore
+.gitignore     text eol=lf export-ignore
+.gitattributes text eol=lf export-ignore
+.gitkeep       text eol=lf export-ignore
